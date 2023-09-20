@@ -1,0 +1,26 @@
+
+<div class="ascii-art-container">
+  <h2>Generate Ascii art</h2>
+  <div class="input-container">
+    <input
+    type="text"
+    placeholder="Enter text"
+    [(ngModel)]="inputText">
+
+    <select [(ngModel)]="selectedFont">
+      <option value="">Select Font</option>
+      <option value="Fuzzy">Fuzzy</option>
+      <option value="Georgi16">Georgi16</option>
+      <option value="Georgia11">Georgia11</option>
+      <option value="Ghost">Ghost</option>
+      <option value="Ghoulish">Ghoulish</option>
+    </select>
+
+    <button (click)="generateAsciiArt()">Generate</button>
+  </div>
+
+  <div class="ascii-output">
+    <pre>{{ asciiArt }}</pre>
+  </div>
+
+</div>
